@@ -9,7 +9,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Avatar from '@material-ui/core/Avatar';
 import PersonIcon from '@material-ui/icons/Person';
 import { Link } from 'react-router-dom';
-import color from '@material-ui/core/colors/amber';
 
 const styles = (theme: Theme) =>
 	createStyles({
