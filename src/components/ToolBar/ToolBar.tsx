@@ -39,7 +39,7 @@ class ToolBar extends Component<IToolBarProps> {
 		const { classes } = this.props;
 		return (
 			<div className={classes.root}>
-				<AppBar position="static">
+				<AppBar position="fixed">
 					<Toolbar style={{ backgroundColor: '#282c34' }}>
 						<IconButton
 							onClick={(_) => this.props.onClick()}

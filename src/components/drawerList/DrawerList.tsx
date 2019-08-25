@@ -1,10 +1,9 @@
-import { Avatar, createStyles, Divider, IconButton, List, ListItem, ListItemIcon, ListItemText, Theme, WithStyles, useTheme } from '@material-ui/core';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import { Avatar, createStyles, Divider, IconButton, List, ListItem, ListItemIcon, ListItemText, Theme, WithStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import PersonIcon from '@material-ui/icons/Person';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { withStyles } from '@material-ui/core/styles';
 
 const styles = (theme: Theme) =>
 	createStyles({
