@@ -2,7 +2,7 @@ import { createStyles, Drawer, makeStyles, Theme } from '@material-ui/core';
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import ToolBar from './components/toolBar/ToolBar';
+import ToolBar from './components/ToolBar/ToolBar';
 import { AppRouter } from './router/AppRouter';
 import DrawerList from './components/drawerList/DrawerList';
 
