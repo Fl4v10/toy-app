@@ -33,43 +33,43 @@ class DrawerList extends Component<IDrawerListProps> {
 		const { classes } = this.props;
 
 		return (
-		<> 
-			<div className={classes.drawerHeader}>
-				<IconButton onClick={this.props.handlerClick}>
-					<ChevronLeftIcon />
-				</IconButton>
-			</div>
-			<Divider />
-			<List>
-				<ListItem button>
-					<ListItemIcon>
-						<Avatar className={classes.avatar}>
-							<PersonIcon />
-						</Avatar>
-					</ListItemIcon>
-					<ListItemText primary={'Oi sumido!'} />
-				</ListItem>
-			</List>
-			<Divider />
-			<List>
-				{[ 'Estoque', 'Reserva', 'Usuários', 'Ocorrências' ].map((text) => (
-					<Link to={this.generatePaths(text)} className={classes.link} key={text}
-						onClick={this.props.handlerClick}
-						onKeyDown={this.props.handlerClick}
+			<>
+				<div className={classes.drawerHeader}>
+					<IconButton onClick={this.props.handlerClick}>
+						<ChevronLeftIcon />
+					</IconButton>
+				</div>
+				<Divider />
+				<List>
+					<ListItem button>
+						<ListItemIcon>
+							<Avatar className={classes.avatar}>
+								<PersonIcon />
+							</Avatar>
+						</ListItemIcon>
+						<ListItemText primary={'Oi sumido!'} />
+					</ListItem>
+				</List>
+				<Divider />
+				<List>
+					{['Inventário', 'Reserva', 'Usuários', 'Ocorrências'].map((text) => (
+						<Link to={this.generatePaths(text)} className={classes.link} key={text}
+							onClick={this.props.handlerClick}
+							onKeyDown={this.props.handlerClick}
 						>
-						<ListItem button key={text + '_item'}>
-							<ListItemText primary={text} />
-						</ListItem>
-					</Link>
-				))}
-			</List>
-        </>);
+							<ListItem button key={text + '_item'}>
+								<ListItemText primary={text} />
+							</ListItem>
+						</Link>
+					))}
+				</List>
+			</>);
 	}
 
 	private generatePaths(text: string): string {
 		let path = '';
 		switch (text) {
-			case 'Estoque':
+			case 'Inventário':
 				path = '/stock';
 				break;
 			case 'Reserva':

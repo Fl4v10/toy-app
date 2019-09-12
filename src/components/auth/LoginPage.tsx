@@ -28,7 +28,7 @@ const styles = (theme: Theme) =>
 		}
 	});
 
-interface ILoginPageProps extends WithStyles<typeof styles> {}
+interface ILoginPageProps extends WithStyles<typeof styles> { }
 
 class LoginPage extends React.Component<ILoginPageProps> {
 	render() {
